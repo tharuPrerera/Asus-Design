@@ -103,6 +103,7 @@ li a:hover:not(.active) {
 
 
 
+/*banner*/
 .container {
   position: relative;
 }
@@ -119,8 +120,8 @@ p {
 /* Bottom right text */
 .text-block {
   position: absolute;
-  bottom: 500px;
-  right: 1px;
+  bottom: 100px;
+  right: 100px;
   color: black;
   padding-left: 20px;
   padding-right: 20px;
@@ -128,8 +129,8 @@ p {
 
 .container .btn {
   position: absolute;
-  top: 500px;
-  right: 770px;
+  top: 400px;
+  right: 350px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
@@ -145,6 +146,7 @@ p {
 .container .btn:hover {
   background-color: black;
 }
+
 
 .grid-container {
   display: grid;
@@ -182,7 +184,7 @@ body {
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 25%;
   padding: 10px;
 }
 
@@ -196,6 +198,106 @@ body {
   display: table;
   clear: both;
 }
+
+.bold_text {
+    font-weight: bold;
+}
+
+.container .btnGammig {
+  position: absolute;
+  top: 520px;
+  right: 915px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FFFD6C;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnGammig:hover {
+  background-color: #FFFD6C;
+}
+
+.container .btnMoniters {
+  position: absolute;
+  top: 535px;
+  right: 390px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #202020;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnMoniters:hover {
+  background-color: #202020;
+}
+
+.container .btnComponents {
+  position: absolute;
+  top: 225px;
+  right: 390px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #202020;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnComponents:hover {
+  background-color: #202020;
+}
+
+.text-block-cloud {
+  position: absolute;
+  bottom: 330px;
+  right: 830px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+    padding : 0;
+    margin : 1;
+    line-height : 10px;
+}
+
+.container .btnCloud {
+  position: absolute;
+  top: 225px;
+  right: 1100px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #202020;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnCloud:hover {
+  background-color: #202020;
+}
+
 </style>
 </head>
 <body>
@@ -216,14 +318,14 @@ body {
 </ul>
 
 <div class="container">
-  <img src="homeImage.jpg" alt="Norway" style="width:100%;">
-  <div class="text-block">
-    <h1>WE DELIVER</h1>
-    <h2>TO YOUR DOOR STEP</h2>
-    <h2>Stay home, Stay safe while we deliver your favorite Asus product to</h2> 
-	<h2>your door step. Usland wide devery</h2>
-    <p>*FREE DELIVERY ABOVE 10,000</p>
-  </div>
+  <img src="Banner.jpg" alt="Norway" style="width:100%;">
+  <!--<div class="text-block">
+    <p style="font-size:100px">WE DELIVER</p>
+    <p style="font-size:55px">TO YOUR DOOR STEP</p>
+    <p style="font-size:18px">Stay home, Stay safe while we deliver your favorite Asus product to</p> 
+	<p style="font-size:18px">your door step. Usland wide devery</p>
+    <p style="font-size:18px">*FREE DELIVERY ABOVE 10,000</p>
+  </div> -->
   <button class="btn">Shop Now</button>
 </div>
 
@@ -234,29 +336,241 @@ body {
 </div>
 
 <div class="grid-container">
-  <div class="item1">
-    <img src="laptop1.jpg" alt="Norway" style="width:30%;">
-	<p>Laptop</p>
-    <p>The distinctively elegant ZenBook Flip 13 OLED has an all-new design that combines ultimate </p>
-    <p>portability with supreme versatility.</p>
-  </div>
-  <div class="item2"> 
-	<img src="laptop2.jpg" alt="Norway" style="width:30%;">
-  </div>
-  <div class="item3">
-    <img src="laptop3.jpg" alt="Norway" style="width:30%;">
-  </div>  
+	<div class="row" style="width:100%;">
+		<div class="column">
+			<div class="item1">
+				<img src="Group 54.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<!--<p style="font-size:10px" align="left">Laptop</p>
+				<p style="font-size:10px" align="right">Rating</p>-->
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>
+		</div>
+		
+		<div class="column">
+			<div class="item2"> 
+				<img src="Group 55.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>
+		</div>
+	  
+		<div class="column">
+			<div class="item3">
+				<img src="Group 56.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>  
+		</div>
+		
+		<div class="column">
+			<div class="item3">
+				<img src="Group 54.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>  
+		</div>
+	</div>
 </div>
 
-<div class="row"> 
-  <div class="column">
-   <img src="laptop4.jpg" style="width:100%">
-  </div>
-  <div class="column">
-   <img src="laptop3.jpg" style="width:100%">
-   <img src="laptop1.jpg" style="width:100%">
-  </div>  
- 
+<div class="row" style="width:100%;"> 
+	<div class="container">
+		<div class="column" style="width:50%;">
+			<img src="AdBlock1.jpg" style="width:100%">
+			<!--<div class="text-block">
+				<p style="font-size:10px">WE DELIVER</p>
+				<p style="font-size:5px">TO YOUR DOOR STEP</p>
+				<p style="font-size:5px">Stay home, Stay safe while we deliver your favorite Asus product to</p> 
+				<p style="font-size:5px">your door step. Usland wide devery</p>
+				<p style="font-size:5px">*FREE DELIVERY ABOVE 10,000</p>
+			</div>-->
+			<button class="btnGammig">Shop Now</button>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="column" style="width:50%;">
+			<div>
+				<img src="AdBlock.jpg" style="width:100%">
+				<button class="btnComponents" >Explore Products</button>
+			</div>
+			<div>
+				<img src="Adlock2.jpg" style="width:100%">
+				<button class="btnMoniters" >Explore Products</button>
+			</div>
+		</div>  
+	</div>
+</div>
+
+<div class="row" style="width:100%;"> 
+	<img src="Warrenty Block.jpg" style="width:100%">
+</div>
+
+<div class="container">
+
+	<div class="grid-container">
+		<div class="row" style="width:100%;">
+			<div class="column"  style="width:50%;">
+				<div class="item1">
+					<img src="Mask Group 1.jpg" alt="Norway" style="width:100%;">
+					<div class="text-block-cloud">
+						<p style="font-size:36px" class="bold_text" align="left" >ASUS NOW WITH</p>
+						<p style="font-size:36px" class="bold_text" align="left">ADOBE CREATIVE CLOUD</p>
+						<p style="font-size:18px" align="left">Purchase and get complimentary membership </p> 
+						<p style="font-size:18px" align="left" >subscription from Adoobe</p>
+					</div>
+					<button class="btnCloud">Shop Now</button>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="item2"> 
+					<img src="Group 55.jpg" alt="Norway" style="width:100%;">
+					<p style="font-size:14px" style="text-align:left;">
+						Laptop
+						<span style="font-size:14px" style="float:right;">
+							Rating
+						</span>
+					</p>
+					<p style="font-size:12px" align="left">UA-11456</p>
+					<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+					<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+					<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+				</div>
+			</div>
+		  
+			<div class="column">
+				<div class="item3">
+					<img src="Group 56.jpg" alt="Norway" style="width:100%;">
+					<p style="font-size:14px" style="text-align:left;">
+						Laptop
+						<span style="font-size:14px" style="float:right;">
+							Rating
+						</span>
+					</p>
+					<p style="font-size:12px" align="left">UA-11456</p>
+					<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+					<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+					<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+				</div>  
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid-container">
+	<div class="row" style="width:100%;">
+		<div class="column">
+			<div class="item1">
+				<img src="Group 54.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<!--<p style="font-size:10px" align="left">Laptop</p>
+				<p style="font-size:10px" align="right">Rating</p>-->
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>
+		</div>
+		
+		<div class="column">
+			<div class="item2"> 
+				<img src="Group 55.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>
+		</div>
+	  
+		<div class="column">
+			<div class="item3">
+				<img src="Group 56.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>  
+		</div>
+		
+		<div class="column">
+			<div class="item3">
+				<img src="Group 54.jpg" alt="Norway" style="width:100%;">
+				<p style="font-size:14px" style="text-align:left;">
+					Laptop
+					<span style="font-size:14px" style="float:right;">
+						Rating
+					</span>
+				</p>
+				<p style="font-size:12px" align="left">UA-11456</p>
+				<p style="font-size:18px" class="bold_text" align="left">ZENBOOK DUO 14 (UX482)</p>
+				<p style="font-size:18px" align="left">LKR 385,000.00 </p>
+				<p style="font-size:18px" align="left">*Included Shipping Costs </p>
+			</div>  
+		</div>
+	</div>
+</div>
+
+<div class="container" class="topnav">
+<div class="row" style="width:100%;" > 
+	
+		<img src="News Letter.jpg" style="width:100%">
+	
+		<input type="text" size="30" placeholder="What are you looking for today?">
+	</div>
+</div>
+
+<div class="row" style="width:100%;" > 
+	<img src="Footer.jpg" style="width:100%">
 </div>
 
 </body>
